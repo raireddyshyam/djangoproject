@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Files</title>
+</head>
+<body>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile"><br>
+    <button type="submit">Upload File</button>
+</form>
+
+{% if uploadfile %}
+<p>File Upload at : <a href="{{uploadfile}}">{{ uploadfile }}</a></p>
+{% endif %}
+
+</body>
+</html>
