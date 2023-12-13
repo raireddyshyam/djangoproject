@@ -1,0 +1,14 @@
+body
+{
+background-image:url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png);
+background-repeat:no-repeat;
+background-size:cover;
+}
+h1
+{
+color:red;font-family:tahoma;text-align:center;
+}
+h2
+{
+color:green;font-family:tahoma;text-align:center;
+}
