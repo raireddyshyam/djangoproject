@@ -1,0 +1,17 @@
+h1
+{
+color:blue;font-family:tahoma;font-size:30px;
+text_align:center;
+}
+h2
+{
+color:red;font-family:candara;font-size:25px;
+text_align:center;
+}
+body
+{
+background-image:url();
+background-repeat:no-repeat;
+background-size:cover;
+color:black;
+}
