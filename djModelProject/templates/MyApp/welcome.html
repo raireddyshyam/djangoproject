@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Template Language</title>
+    <link href="{% static 'css/MyFile.css'%}" rel="stylesheet"/>
+</head>
+<body>
+<h1>Employees List.....!!!</h1>
+{% if elist%}
+<table border="1px">
+    <thead>
+    <th>EMPID</th>
+    <th>EMPNAME</th>
+    <th>EMPSAL</th>
+    <th>EMPADD</th>
+    </thead>
+    {% for emp in elist %}
+    <tr>
+        <td>{{emp.EmpID}}</td>
+        <td>{{emp.EmpName}}</td>
+        <td>{{emp.EmpSal}}</td>
+        <td>{{emp.EmpAdd}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% else %}
+<h1>Sorry No Records found</h1>
+{% endif %}
+</body>
+</html>
