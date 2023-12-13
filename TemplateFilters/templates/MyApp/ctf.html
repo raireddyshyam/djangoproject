@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django template filters</title>
+</head>
+<body>
+{% load cust_filters %}
+{% for item in datalist %}
+<ul>
+    <li>{{ item.name|cn:2}}</li>
+    <li>{{ item.subject|cn:1}}</li>
+    <li>{{ item.dept|cn:10}}</li>
+    <li>{{ item.date|date:"d-m-Y"}}</li>
+</ul><hr>
+{% endfor  %}
+</body>
+</html>
